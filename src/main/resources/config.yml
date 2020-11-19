@@ -1,0 +1,138 @@
+mysql:
+  enabled: false #-> Should we use this database instead of the one configured in PLJRApi config.yml?
+  host: "127.0.0.1"
+  port: "3306"
+  database: "db"
+  username: "root"
+  password: ""
+
+stream:
+  account: ""
+  token: ""
+
+settings:
+  cheer-enabled: true #-> Should we listen to cheer events?
+  follow-enabled: true #-> Should we listen to follow events?
+  host-enabled: true #-> Should we listen to host events?
+  subscriber-enabled: true #-> Should we listen to subscribe events?
+  tip-enabled: true #-> Should we listen to tip events?
+  random-items: false #-> Should we give random items instead of configured ones?
+
+announcement:
+  cheer:
+    title:
+      title: "§e§l%user §a§lCheered!"
+      subtitle: "§fYou received §7a random item§f!"
+      in: 20
+      stay: 40
+      out: 20
+    action-bar:
+      message: "§aStream §8» §6%user §7just cheered §6%amount §7bits!"
+      duration: 80
+    sound:
+      type: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    broadcast:
+      - ""
+      - "§aStream §8» §6%user §7just cheered §6%amount §7bits!"
+      - ""
+  follow:
+    title:
+      title: "§e§l%user §a§lFollowed!"
+      subtitle: "§fYou received §7a random item§f!"
+      in: 20
+      stay: 40
+      out: 20
+    action-bar:
+      message: "§aStream §8» §6%user §7just followed!"
+      duration: 80
+    sound:
+      type: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    broadcast:
+      - ""
+      - "§aStream §8» §6%user §7just followed!"
+      - ""
+  host:
+    title:
+      title: "§e§l%user §a§lHosted!"
+      subtitle: "§fYou received §7a random item§f!"
+      in: 20
+      stay: 40
+      out: 20
+    action-bar:
+      message: "§aStream §8» §6%user §7just hosted with §6%amount §7viewers!"
+      duration: 80
+    sound:
+      type: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    broadcast:
+      - ""
+      - "§aStream §8» §6%user §7just hosted with §6%amount §7viewers!"
+      - ""
+  subscriber:
+    title:
+      title: "§e§l%user §a§lSubscribed!"
+      subtitle: "§fYou received §7a random item§f!"
+      in: 20
+      stay: 40
+      out: 20
+    action-bar:
+      message: "§aStream §8» §6%user §7just subscribed!"
+      duration: 80
+    sound:
+      type: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    broadcast:
+      - ""
+      - "§aStream §8» §6%user §7just subscribed!"
+      - ""
+  tip:
+    title:
+      title: "§e§l%user §a§lTipped!"
+      subtitle: "§fYou received §7a random item§f!"
+      in: 20
+      stay: 40
+      out: 20
+    action-bar:
+      message: "§aStream §8» §6%user §7just tipped §6%amount§7!"
+      duration: 80
+    sound:
+      type: "LEVEL_UP"
+      volume: 1
+      pitch: 1
+    broadcast:
+      - ""
+      - "§aStream §8» §6%user §7just tipped §6%amount§7!"
+      - ""
+
+items:
+  cheer:
+    1:
+      type: "STONE"
+      amount: 32
+      name: "§8Cheering rock"
+  follow:
+    1:
+      type: "STONE"
+      amount: 32
+      name: "§8Following rock"
+  host:
+    1:
+      type: "STONE"
+      amount: 32
+      name: "§8Hosting rock"
+  subscriber:
+    1:
+      type: "STONE"
+      amount: 32
+      name: "§8Subscribing rock"
+  tip:
+    1:
+      type: "STONE"
+      amount: 32
+      name: "§8Tipping rock"

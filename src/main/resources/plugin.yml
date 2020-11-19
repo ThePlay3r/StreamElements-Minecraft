@@ -1,0 +1,7 @@
+name: StreamElements-Minecraft
+version: ${project.version}
+main: me.pljr.streamelementsminecraft.StreamElementsMinecraft
+api-version: 1.13
+depend: [ PLJRApi ]
+authors: [ 9hx ]
+description: Plugin to connect StreamElements with Minecraft.
